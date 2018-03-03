@@ -1,3 +1,5 @@
+saslproxy
+
 One of my critical work functions is emailing reports to users automatically. Recently work reconfigured the mail servers and now require all messages sent out to have authenticated senders via SASL. Since not all SMTP libs were upgraded with such functionality, it was easier to write a proxy to authenticate on my behalf. This script simply injects a SASL auth plain credential at the right time. I use it with stunnel for TLS.
 --
 This script is meant to act as a SMTP proxy for the following condition:
